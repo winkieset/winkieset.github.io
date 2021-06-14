@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			font-family: candara;
+		}
+		.header{
+				padding: 20px;
+  				text-align: left;
+
+		}
+		.column1 {
+			  float: left;
+			  width: 30%;
+			  padding-left: 20px;
+			  padding-right: 20px;
+			  margin-top: 240px;
+			  color: white;
+			  font-weight: lighter;
+		}
+		.column2 {
+			  float: left;
+			  text-align: center;
+			  width: 65%;
+			  margin-top: 10px;
+			  color: white;
+		}
+		.column3 {
+			  float: left;
+			  text-align: center;
+			  width: 50%;
+			  padding-top: 30px;
+			  padding-bottom: 30px;
+			  color: white;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+		}
+		.button {
+			  background-color: #006350; /* Green */
+			  border: none;
+			  color: white;
+			  padding: 10px 30px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-size: 16px;
+			  margin: 15px 2px;
+			  cursor: pointer;
+		}
+		.button1 {
+			  
+			  color: white;
+			  border: 1px solid #e7e7e7;
+			  border-radius: 40px;
+		}
+		.button2 {	  
+			  color: white;
+			  padding: 5x 32px;
+			  background-color: #008CBA;
+			  border-radius: 40px;
+		}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 15px;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 30px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  padding-bottom: 8px;
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+h1{
+	text-align: center;
+}
+
+	</style>
+</head>
+<body background="bg.png">
+	<header>
+		<div class="header">
+			<a href="index.html">
+			<img  src="rakitin.png" height="90" width="90">	
+			</a>
+		</div>
+	</header>
+	</h1>
+	<div class="container">
+	  <form action="resultpc.html">
+	  	<h1> SIMULASI RAKITIN</h1>
+
+	    <div class="row">
+	      <div class="col-25">
+	        <label for="country">Processor</label>
+	      </div>
+	      <div class="col-75">
+	        <select id="Processor" name="Processor">
+	        	<option selected>Choose...</option>
+	            <option value="1000000">AMD RYZEN 3</option>
+			    <option value="2000000">AMD RYZEN 5</option>
+			    <option value="3000000">AMD RYZEN 7</option>
+			    <option value="1000000">INTEL CORE I3</option>
+			    <option value="1800000">INTEL CORE I5</option>
+			    <option value="3000000">INTEL CORE I7</option>
+			    <option value="7000000">INTEL CORE I9</option>
+	        </select>
+	      </div>
+	    </div>
+
+	    <div class="row">
+	      <div class="col-25">
+	        <label for="country">RAM</label>
+	      </div>
+	      <div class="col-75">
+	        <select id="ram" name="ram">
+	            <option selected>Choose...</option>
+			    <option value="200000">RAM 2GB</option>
+			    <option value="400000">RAM 4GB</option>
+			    <option value="700000">RAM 8GB</option>
+			    <option value="1500000">RAM 16GB</option>
+	        </select>
+	      </div>
+	    </div>
+
+	    <div class="row">
+	      <div class="col-25">
+	        <label for="country">Graphics Card</label>
+	      </div>
+	      <div class="col-75">
+	        <select id="graphics" name="graphics">
+	            <option selected>Choose...</option>
+			    <option value="2000000">NVIDIA GTX 1050</option>
+			    <option value="2500000">NVIDIA GTX 1660</option>
+			    <option value="3000000">RTX 2060</option>
+			    <option value="2300000">R7 570</option>
+			</select>
+	      </div>
+	    </div>
+
+	    <div class="row">
+	      <div class="col-25">
+	        <label for="country">Motherboard</label>
+	      </div>
+	      <div class="col-75">
+	        <select id="mobo" name="mobo">
+			    <option selected>Choose...</option>
+			    <option value="1600000">ASROCK STEEL LEGEND B450</option>
+			    <option value="1500000">ASROCK B350</option>
+			    <option value="700000">ASROCK A320M</option>
+			    <option value="2000000">GIGABYTE AORUS B450</option>
+			</select>
+	      </div>
+	    </div>
+
+	    <div class="row">
+	      <div class="col-25">
+	        <label for="country">Case</label>
+	      </div>
+	      <div class="col-75">
+	        <select id="case" name="case">
+	            <option selected>Choose...</option>
+			    <option value="150000">DAZUMBA</option>
+			    <option value="299000">ARMAGEDON</option>
+			    <option value="350000">COOLER MASTER</option>
+			    <option value="4000000">NZXT</option>
+			</select>
+	      </div>
+	    </div>
+
+	    <div class="row">
+	      <input type="submit" value="Submit">
+	    </div>
+ 	 </form>
+</div>
+</body>
+</html>

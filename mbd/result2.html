@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			font-family: candara;
+		}
+		.header{
+				padding: 20px;
+  				text-align: left;
+
+		}
+		.column1 {
+			  float: left;
+			  width: 250px;
+			  padding-left: 350px;
+			  padding-right: 20px;
+			  margin-top: 30px;
+			  color: white;
+			  font-weight: lighter;
+		}
+		.column2 {
+			  float: left;
+			  text-align: left;
+			  width: 50%%;
+			  margin-top: 10px;
+			  color: white;
+		}
+		.column3 {
+			  float: left;
+			  text-align: center;
+			  width: 50%;
+			  padding-top: 30px;
+			  padding-bottom: 30px;
+			  color: white;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+		}
+		.button {
+			  background-color: #006350; /* Green */
+			  border: none;
+			  color: white;
+			  padding: 10px 30px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-size: 16px;
+			  margin: 15px 2px;
+			  cursor: pointer;
+		}
+		.button1 {
+			  
+			  color: white;
+			  border: 1px solid #e7e7e7;
+			  border-radius: 40px;
+		}
+		.button2 {	  
+			  color: white;
+			  padding: 5x 32px;
+			  background-color: #008CBA;
+			  border-radius: 40px;
+		}
+		.laptop{
+			border-radius: 8px;
+			background-color: white;
+		}
+		.harga{
+			color: yellow;
+		}
+		.pagination {
+		  padding-top: 100px;
+		  padding-left: 575px;
+		  display: inline-block;
+		}
+
+		.pagination a {
+		  font-weight: bolder;
+		  color: black;
+		  float: left;
+		  padding: 8px 16px;
+		  text-decoration: none;
+		  font-family: calibri;
+		  font-size: 20px;
+		}
+
+		.pagination a.active {
+		  background-color: #2196F3;
+		  color: white;
+		  border-radius: 100%;
+		}
+
+		.pagination a:hover:not(.active) {
+		  background-color: #ddd;
+		  border-radius: 100%;
+		}
+
+	</style>
+</head>
+<body background="bg.png">
+	<header>
+		<div class="header">
+			<a href="index.html">
+			<img  src="rakitin.png" height="90" width="90">	
+			</a>
+		</div>
+	</header>
+	<div class="row">
+	  <div class="column1">
+	  		<img class="laptop" src="14.png" height="200" width="200">
+	  </div>
+	  
+	  <div class="column2">
+	    <h2>Acer Swift 3 </h2>
+	    <h3 class="harga">Rp 7.999.000</h3>
+	    <p>
+	    	Operating System Windows<br>
+	    	Processor AMD Ryzen 5 350OU<br>
+	    	Memory RAM 4 GB  DDR3<br>
+	    	Penyimpanan SSID 512 GB<br>
+	    	Ukuran Layar 14" FHD<br>
+	    	VGA AMD Radeon Vega 8 Mobile Graphics
+	    </p>
+	</div>
+	<page>
+		<div class="pagination">
+		  <a href="result1.html">&laquo;</a>
+		  <a href="result1.html">1</a>
+		  <a href="result2.html" class="active">2</a>
+		  <a href="result3.html">3</a>
+		  <a href="result3.html">&raquo;</a>
+		</div>
+	<page>
+	
+</body>
+</html>
